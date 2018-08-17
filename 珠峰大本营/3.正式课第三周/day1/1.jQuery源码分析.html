@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
+
 <body>
 
 </body>
+
 </html>
 <script>
     /*
@@ -54,14 +57,14 @@
     *
     * */
 
-    (function (global,factory) {
-            factory()
-    })(this,function (window) {
+    (function (global, factory) {
+        factory()
+    })(this, function (window) {
         var
             version = "1.11.3",
-            jQuery = function( selector, context ) {
-            // 把jQuery当成一个普通函数，返回值是jQuery的入口文件，是一个实例
-                return new jQuery.fn.init( selector, context );
+            jQuery = function (selector, context) {
+                // 把jQuery当成一个普通函数，返回值是jQuery的入口文件，是一个实例
+                return new jQuery.fn.init(selector, context);
                 //  jQuery.fn.init =
                 // 返回一个jQuery的实例
                 //return  new jQuery () 会形成死循环
@@ -76,66 +79,66 @@
             constructor: jQuery,
             selector: "",
             length: 0,
-            toArray: function() {
-                return slice.call( this );
+            toArray: function () {
+                return slice.call(this);
             }
         };
-        jQuery.extend = jQuery.fn.extend = function(obj) {
+        jQuery.extend = jQuery.fn.extend = function (obj) {
             // jQuery.fn = jQuery.prototype
             // 将传入的对象，扩展到制定的对象[jQuery\jQuery.fn]中
         };
         jQuery.fn.extend({
-            age:function(){}
+            age: function () { }
         });
         jQuery.extend({
-            age1:function(){}
+            age1: function () { }
         })
-        jQuery={
-            name:'zf',
-            age1:function(){}
+        jQuery = {
+            name: 'zf',
+            age1: function () { }
         }
-        jQuery.fn=jQuery.prototype ={
-            slice:function () {},
-            each:function(){},
+        jQuery.fn = jQuery.prototype = {
+            slice: function () { },
+            each: function () { },
             ...
             //age:function(){}
         }
-        var init = jQuery.fn.init = function( selector, context ) {
+        var init = jQuery.fn.init = function (selector, context) {
             //this => jQuery的实例
-            if ( typeof selector === "string" ) {
-                if ( selector.charAt(0) === "<" && selector.charAt( selector.length - 1 ) === ">" && selector.length >= 3 ) {
+            if (typeof selector === "string") {
+                if (selector.charAt(0) === "<" && selector.charAt(selector.length - 1) === ">" && selector.length >= 3) {
                     // Assume that strings that start and end with <> are HTML and skip the regex check
-                    match = [ null, selector, null ];
+                    match = [null, selector, null];
 
                 } else {
-                    match = rquickExpr.exec( selector );
+                    match = rquickExpr.exec(selector);
                 }
 
                 // Match html or make sure no context is specified for #id
-                if ( match && (match[1] || !context) ) {
+                if (match && (match[1] || !context)) {
 
                     // HANDLE: $(html) -> $(array)
-                    if ( match[1] ) {
+                    if (match[1]) {
                         context = context instanceof jQuery ? context[0] : context;
 
                         // scripts is true for back-compat
                         // Intentionally let the error be thrown if parseHTML is not present
-                        jQuery.merge( this, jQuery.parseHTML(
+                        jQuery.merge(this, jQuery.parseHTML(
                             match[1],
                             context && context.nodeType ? context.ownerDocument || context : document,
                             true
-                        ) );
+                        ));
 
                         // HANDLE: $(html, props)
-                        if ( rsingleTag.test( match[1] ) && jQuery.isPlainObject( context ) ) {
-                            for ( match in context ) {
+                        if (rsingleTag.test(match[1]) && jQuery.isPlainObject(context)) {
+                            for (match in context) {
                                 // Properties of context are called as methods if possible
-                                if ( jQuery.isFunction( this[ match ] ) ) {
-                                    this[ match ]( context[ match ] );
+                                if (jQuery.isFunction(this[match])) {
+                                    this[match](context[match]);
 
                                     // ...and otherwise set as attributes
                                 } else {
-                                    this.attr( match, context[ match ] );
+                                    this.attr(match, context[match]);
                                 }
                             }
                         }
@@ -144,15 +147,15 @@
 
                         // HANDLE: $(#id)
                     } else {
-                        elem = document.getElementById( match[2] );
+                        elem = document.getElementById(match[2]);
 
                         // Check parentNode to catch when Blackberry 4.6 returns
                         // nodes that are no longer in the document #6963
-                        if ( elem && elem.parentNode ) {
+                        if (elem && elem.parentNode) {
                             // Handle the case where IE and Opera return items
                             // by name instead of ID
-                            if ( elem.id !== match[2] ) {
-                                return rootjQuery.find( selector );
+                            if (elem.id !== match[2]) {
+                                return rootjQuery.find(selector);
                             }
 
                             // Otherwise, we inject the element directly into the jQuery object
@@ -166,36 +169,36 @@
                     }
 
                     // HANDLE: $(expr, $(...))
-                } else if ( !context || context.jquery ) {
-                    return ( context || rootjQuery ).find( selector );
+                } else if (!context || context.jquery) {
+                    return (context || rootjQuery).find(selector);
 
                     // HANDLE: $(expr, context)
                     // (which is just equivalent to: $(context).find(expr)
                 } else {
-                    return this.constructor( context ).find( selector );
+                    return this.constructor(context).find(selector);
                 }
 
                 // HANDLE: $(DOMElement)
-            } else if ( selector.nodeType ) {
+            } else if (selector.nodeType) {
                 this.context = this[0] = selector;
                 this.length = 1;
                 return this;
 
                 // HANDLE: $(function)
                 // Shortcut for document ready
-            } else if ( jQuery.isFunction( selector ) ) {
+            } else if (jQuery.isFunction(selector)) {
                 return typeof rootjQuery.ready !== "undefined" ?
-                    rootjQuery.ready( selector ) :
+                    rootjQuery.ready(selector) :
                     // Execute immediately if ready is not present
-                    selector( jQuery );
+                    selector(jQuery);
             }
 
-            if ( selector.selector !== undefined ) {
+            if (selector.selector !== undefined) {
                 this.selector = selector.selector;
                 this.context = selector.context;
             }
 
-            return jQuery.makeArray( selector, this );
+            return jQuery.makeArray(selector, this);
         };
 
         init.prototype = jQuery.fn;
@@ -228,12 +231,12 @@
     new jQuery().slice()
 
     new jQuery().fn // jq的实例的fn属性
-    new jQuery.fn.init( selector, context )// 属于jQuery.fn.init的实例
+    new jQuery.fn.init(selector, context)// 属于jQuery.fn.init的实例
 </script>
 
 <script>
     // 实例.css  = jQuery.prototype.css
-    $('ul',document).css()   // 操作元素的方法
+    $('ul', document).css()   // 操作元素的方法
     // 把jQuery当成一个对象。它的ajax执行
     $.ajax()    // 工具方法
 
