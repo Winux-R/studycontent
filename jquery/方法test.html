@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+</head>
+<body>
+<div></div>
+<div></div>
+<div></div>
+<li></li>
+<script>
+  $.each([52, 97], function(index, value) {
+   console.log(index + ': ' + value);
+  });
+  $('li').pushStack(document.getElementsByTagName('div'));
+  console.log($.isFunction(function () {}));
+</script>
+</body>
+</html>

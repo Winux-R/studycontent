@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+      var ary = [12,88,66,100,77,56,34,28,64];
+      function quickSort(ary) {
+        if (ary.length <= 1) {
+          return ary;
+        }
+        var left = [];
+        var right = [];
+        var index = Math.floor(ary.length/2);
+        var middle = Number(ary.splice(index,1).toString());
+        for (var i = 0; i < ary.length; i++) {
+          if (ary[i] < middle) {
+            left.push(ary[i])
+          } else {
+            right.push(ary[i])
+          }
+        }
+        return quickSort(left).concat(middle, quickSort(right));
+      }
+      console.log(quickSort(ary));
+    </script>
+</body>
+</html>

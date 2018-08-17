@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            width:400px;
+            height:300px;
+            margin:100px auto;
+
+        }
+        .container ul{
+            list-style: none;
+            overflow: hidden;
+        }
+        .container ul li{
+            width:80px;
+            height:30px;
+            text-align: center;
+            line-height: 30px;
+            margin-right:10px;
+            float:left;
+            border:1px solid lightcoral;
+            cursor: pointer;
+        }
+        .container ul li.select{
+            background: pink;
+        }
+        .container div{
+            display: none;
+            width:100%;
+            height:260px;
+            line-height: 260px;
+            text-align: center;
+            border:1px solid lightcoral;
+        }
+        .container div.select{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container" id="tab">
+    <ul>
+        <li class="select">电影</li>
+        <li>动漫</li>
+        <li>电视剧</li>
+    </ul>
+    <div>侏罗纪</div>
+    <div>海贼王</div>
+    <div class="select">笑傲江湖</div>
+</div>
+
+<script>
+   // 选项卡实现原理： 当点击li时，首先清除所有div身上的class和li上的class;
+    // 让当前点击的这个li对应的div新增class【select】就可以了；
+    // 让当前点击的这个li也新增class就可以了；
+    var  oTab = document.getElementById("tab");
+    var oLis = oTab.getElementsByTagName('li');
+    var divs = oTab.getElementsByTagName("div");
+   //console.log(divs);
+   //   oLis[0].onclick = function () {
+   //       console.log(100);
+   //   }
+   //   oLis[1].onclick = function () {
+   //       console.log(200);
+   //   }
+   //   oLis[2].onclick = function () {
+   //       console.log(300);
+   //   }
+    for(var i=0;i<oLis.length;i++){
+        //console.log(1);
+        // 给元素onclick绑定一个函数，当点击这个元素时，这个函数才会执行；
+        oLis[i].zhufengIndex = i;
+//        oLis[0].zhufengIndex =0;
+//        oLis[1].zhufengIndex =1;
+//        oLis[2].zhufengIndex =2;
+        oLis[i].onclick = function () {
+            // 清空li和div身上的所有的select类名
+            for(var j=0;j<oLis.length;j++){
+                oLis[j].className = "";
+                divs[j].className="";
+            }
+            //在函数中的这个i是输出的3；因为当点击的时候，此处代码才开始运行，此时，for循环早已经执行完成；
+            //console.log(i);
+           // oLis[i].className = "select";
+            // this : 指向当前被绑定这个函数；
+            this.className = "select";
+            divs[this.zhufengIndex].className = 'select';
+        }
+    }
+
+
+
+</script>
+</body>
+</html>

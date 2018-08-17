@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // if  else    switch case    三元运算符
+//    if(1==0){
+//        // 当条件成立时，执行此处的代码；
+//    }else{
+//       //  当条件不成立时，执行此处的代码；
+//    }
+
+//    if(1==0){
+//        // 当条件成立时，执行此处的代码；
+//        console.log(1);
+//    }else if(1==="1"){
+//        console.log(2);
+//    }else if(typeof NaN==="number"){
+//        console.log(3);
+//    }else{
+//        console.log(4);
+//    }
+
+//    if(1==1){
+//        console.log(1);
+//    }else if(1=="1"){
+//        console.log(2);
+//    }
+    // 只要遇到一个正确的，就不再向下执行
+//    if(1==1){
+//        console.log(100);
+//    }
+//    if(2==2){
+//        console.log(200);
+//    }
+//    if(true == !true){
+//        console.log(1);
+//    } //undefined
+//    if([]==[]){ // 连个对象类型的值进行比较，是进行地址间的比较
+//        console.log(2);
+//    } // undefined
+//    // !  : 首先会把后面的值转换成布尔值，然后再进行取反；
+//    if([]==![]){ // (Number([])--> 0) == (Boolean([])-->true-->!true-->false-->0)
+//        console.log(3);
+//    } // 3
+
+//    if([]==false){ // number([]--> 0) == (false-->0)
+//        console.log(4);
+//    } // 4
+//    if(![]==false){ // Boolean([])-->true-->!true-->false-->0) == (false-->0)
+//        console.log(5);
+//    } // 5
+
+    // switch  case;进行绝对比较
+//    var  i=10;
+//    switch (i%3){
+//        case 0://0===1
+//            console.log(100);
+//            break;// 中止；
+//        case 1:// 1===1
+//            console.log(200);
+//            break;
+//        case 2:
+//            console.log(300);
+//            break;
+//        default:
+//            console.log(1000);// 以上条件均不成立，执行此处的代码；
+//    }
+
+    // 三元运算符： 一般用于处理简单的if  else;
+    // ? : 问号前面是条件，问号后面是条件成立时执行的代码，冒号后面是条件不成立时，执行的代码；
+//    if(true==[]){
+//        console.log(1);
+//    }else{
+//        console.log(2);
+//    }
+   // true == []?console.log(1):console.log(2);
+if(1==="1"){
+    if(isNaN("3px")===false){
+        console.log(1);
+    }else{
+        console.log(2);
+    }
+}else{
+    console.log(3);
+}
+
+
+
+
+
+
+</script>
+</body>
+</html>

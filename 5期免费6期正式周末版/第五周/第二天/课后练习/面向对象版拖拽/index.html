@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background: #20ff28;
+            border: 1px solid #cccccc;
+            position: absolute;
+            text-align: center;
+            line-height: 100px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+        #box1{
+            top: 50px;
+        }
+        #box2{
+            top: 180px;
+        }
+        #box3{
+            top: 300px;
+        }
+    </style>
+</head>
+<body>
+<div id="box1">1</div>
+<div id="box2">2</div>
+<div id="box3">3</div>
+    <script>
+      let oBox1 = document.getElementById("box1");
+      let oBox2 = document.getElementById("box2");
+      let oBox3 = document.getElementById("box3");
+        function Drag(ele) {
+          this.ele = ele;
+          ele.onmousedown = this.down.bind(this);
+        }
+        Drag.prototype.down = function (e) {
+          e = e || window.event;
+          this.startX = e.clientX;
+          this.startY = e.clientY;
+          this.OFL = this.ele.offsetLeft;
+          this.OFT = this.ele.offsetTop;
+          this.leftx = e.clientX - this.ele.offsetLeft;
+          this.rightx= this.ele.offsetWidth - (e.clientX - this.ele.offsetLeft);
+          this.topy = e.clientY - this.ele.offsetTop;
+          this.bottomy= this.ele.offsetHeight - (e.clientY - this.ele.offsetTop);
+          document.onmousemove = this.move.bind(this);
+          document.onmouseup = this.up.bind(this);
+        };
+        Drag.prototype.move = function (e) {
+          e = e || window.event;
+          this.endX = e.clientX;
+          this.endY = e.clientY;
+          let moveW = this.endX - this.startX;
+          let moveH = this.endY - this.startY;
+          if (e.clientX <= this.leftx) {
+            this.ele.style.left = 0;
+          } else if (document.body.offsetWidth - e.clientX <= this.rightx) {
+            this.ele.style.left = document.body.offsetWidth - this.ele.offsetWidth + "px";
+          } else {
+            this.ele.style.left = moveW + this.OFL + 'px';
+          }
+          if (e.clientY <= this.topy) {
+            this.ele.style.top = 0;
+          } else if (document.documentElement.clientHeight - e.clientY <= this.bottomy) {
+            this.ele.style.top = document.documentElement.clientHeight - this.ele.offsetHeight + "px";
+          } else {
+            this.ele.style.top = moveH + this.OFT + 'px';
+          }
+        };
+        Drag.prototype.up = function () {
+            document.onmousemove = null;
+            document.onmouseup = null;
+        };
+        new Drag(oBox1);
+        new Drag(oBox2);
+        new Drag(oBox3);
+    </script>
+</body>
+</html>

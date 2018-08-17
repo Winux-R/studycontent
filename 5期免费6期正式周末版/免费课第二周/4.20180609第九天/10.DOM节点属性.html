@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box">
+    <!--shudsd-->
+    <div class="a"></div>
+    <div class="a"></div>
+    <div class="a">
+        <ul>
+            <li><span></span></li>
+        </ul>
+    </div>
+    <!--dshu-->
+    <!--dshu-->
+    <!--dshu-->
+    <!--dshu-->
+    <div id="second"></div>
+    <div></div>
+</div>
+<div></div>
+<script>
+    //             nodeType      nodeName     nodeValue
+    // 元素节点        1          大写的标签名     null；
+    // 文本节点        3           #text        文本内容；
+    // 注释节点        8            #comment     注释内容
+    // document       9            #document    null；
+    var box = document.getElementById("box");
+    var a = document.getElementById("a");
+    var bro = document.getElementsByClassName("a")[0];
+    var sec = document.getElementById("second")
+
+
+    // 1.childNodes: 元素所有的子节点；
+     console.log(box.childNodes);// false 类数组
+
+    //2. children :当前元素的子元素节点；
+     console.log(box.children);
+    // 3.parentNode: 获取当前元素的父亲节点
+    //a.parentNode.style.background = 'black';
+    //console.log(document.body.parentNode.parentNode.parentNode);
+    // body -->html -->document-->null;
+    //console.log(window);
+
+    // 4. previousSibling : 获取上一个哥哥节点；
+    // 获取的值如果是唯一的，获取不到，那么结果就是null；
+    // previousElementSibling : 获取上一个哥哥元素节点；在IE678 下是不兼容的；
+
+    //    console.log(bro.previousSibling.previousSibling.previousSibling.previousSibling);
+
+    // console.log(sec.previousElementSibling);
+    // 写一个兼容的获取哥哥元素节点的方法
+    function getBro(curEle) {
+        // 获取当前元素的哥哥节点，判断当前哥哥节点的nodeType 是1；如果nodeType不是1，继续向上查找；
+        var pre = curEle.previousSibling;
+        while (pre) {//  如果是一个值，会默认转成布尔值； 0  “” NaN null undefined；
+            if (pre.nodeType === 1) {
+                return pre;
+            };
+            pre = pre.previousSibling;
+        }
+    };
+    console.log(getBro(sec));
+    var obj = {a: 1};
+    obj = obj.a;
+    console.log(obj);
+    //  5. nextSibling :获取下一个弟弟节点
+    // nextElementSibling : 获取下一个弟弟元素节点；（IE678 不兼容）
+    // 6. firstChild : 第一个子节点
+    //   firstElementChild : 第一个子元素节点（IE678 不兼容）
+    // 7. lastChild : 获取最后一个子节点
+    //   lastElementChild : 获取最后一个子元素节点;（IE678 不兼容）
+
+    // 节点指的是当前这个元素对象；
+
+
+
+
+</script>
+</body>
+</html>

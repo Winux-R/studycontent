@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //  number  : 数字类型；
+    // 正数 负数 0  NaN；
+    // NaN : 不是一个数字，但是属于number类型；
+    //  var  num = 19;
+
+    // Number : 把其他数据类型强制转换成number类型；要么是数字要么是NaN；
+    // 在Number执行时，首先会把后面的值调用toString；
+    Number([])// 0
+    Number({})// NaN
+    Number("")// 0
+    Number(null)// 0
+    Number(undefined)// NaN
+    Number([12])// 12
+    Number([12,13])// NaN
+    Number(true)//1
+    Number(false)//0
+    Number("17px")//NaN
+
+    // isNaN() 判断当前值是否是非有效数字；首先会调用Number方法转换成number类型；再进行判断；
+    isNaN(17)  // false
+    isNaN("17px") // true
+    isNaN(true)// false;
+    isNaN({})// true
+
+    // parseInt : 把字符串中的数字提取出来，从左到右依次提取，直到遇到一个非有效数字为止，不能识别小数点；
+    // 如果没有找到，那么是NaN；
+
+    //parseFloat() ; 多识别一位小数点；
+    // toFixed : 保留小数点位数； 返回一个字符串
+
+    console.log(Number(12.889.toFixed(2)) + Number(13.001.toFixed(2)));
+
+
+</script>
+</body>
+</html>

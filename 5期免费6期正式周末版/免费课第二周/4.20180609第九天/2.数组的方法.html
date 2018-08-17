@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 1. push  : 往数组中新增最后一项；返回新增之后数组的length；
+    // 2. pop : 删除数组最后一项； 删除的那一项；
+    // 3. unshift : 新增数组第一项
+    // 4. shift : 删除数组第一项；
+    // 5.slice : 截取；
+        // 1.slice()不传参数，克隆数组
+        // 2.slice(m) 从索引m开始，截取到数组的末尾；
+        // 3.slice(m,n) 从索引m开始，截取到索引n,不包括n;
+
+    //var  ary = [1,2,3,7]
+   // console.log(ary.slice());//
+    // 6.splice(); 删除；
+
+   // var  ary = [1,2,3,7,99,88,66];
+
+    //console.log(ary.splice(2,2,[18,100]));//
+    //console.log(ary);
+
+    // 7.sort: 排序；只能排10以内的数字；
+//   var  ary = [1,2,3,7,99,88,66,1001];
+   //var  ary1 = [{a:1},{a:100},{a:88},{a:98}]
+    //var  ary = [101,888,770,356,860,999]
+    //console.log(ary.sort(function (a,b) {
+        // a,b : 代表的是当前数组的数组成员项；
+        //return a-b;
+    //}));
+    //console.log(ary);
+
+    // 8.reverse :
+    //console.log(ary.reverse());
+    //console.log(ary);
+
+    // 9.concat :
+    //var  ary = [1,2,3,7,99,88,66,99,1001];
+//    var a = 16;
+//    console.log(ary.concat(a,8899));
+//    console.log(ary);
+   // 10.  indexOf :
+    //console.log(ary.indexOf(101));
+    // 11. lastIndexOf :
+    //console.log(ary.lastIndexOf(99));
+
+    //12.join
+//    console.log(ary.join("+"));
+//    console.log(ary);
+    var  ary = [1,2,3,7,99,88,66,99,1001];
+    // 13.map :映射；
+//    let  newAry = ary.map(function (item,index) {
+//        // 函数执行次数跟数组成员个数有关；
+//        // 第一个参数输出当前的成员；
+//        //console.log(item);
+//        //console.log(index);// 数组成员对应的索引；
+//        //return 100;
+//    });
+//    console.log(newAry);
+//    console.log(ary);
+
+    // 14. forEach :遍历；没有return；
+//     let  newAry = ary.forEach(function (item,index) {
+////         console.log(item);
+////         console.log(index);
+//         return  100
+//
+//     })
+//    console.log(newAry);
+     // 15. toString;
+    //console.log(ary.toString());
+
+
+</script>
+</body>
+</html>

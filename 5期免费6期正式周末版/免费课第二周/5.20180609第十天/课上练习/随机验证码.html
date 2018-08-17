@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #code{
+            margin:30px auto;
+            width:200px;
+            height:40px;
+            text-align: center;
+            line-height: 40px;
+            color:blue;
+            border:1px solid lightcoral;
+            border-radius: 10px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="code"></div>
+<script>
+    var code = document.getElementById("code");
+    var str = '0123456789qwertyuioplkjhgfdsazxcvbnmQWERTYUIOPLKJHGFDSAZXCVBNM';
+    function getCode() {
+      var i = 0;
+      var newStr = "";
+        while(i < 4) {
+          var num = Math.round(Math.random() * ( 61 - 0 ) + 0);
+          if (newStr.toLowerCase().indexOf(str[num].toLowerCase())===-1) {
+            newStr += str[num];
+            i++;
+          }
+        }
+      code.innerHTML = newStr;
+    }
+    getCode();
+    code.onclick = getCode;
+
+</script>
+</body>
+</html>

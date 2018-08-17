@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var ary = [100,22,7,8,5,22,8,99,9];
+    // 插入排序
+     //  2  5  6  8  10  12
+    var  newAry = [];
+    newAry.push(ary[0]);
+    for(var i=1;i<ary.length;i++){
+        // [100]
+        // [7,22,100]
+        // [7,8,22,100];
+        var  cur = ary[i];
+        //  循环开始的是最后一项的索引；
+        for(var j = newAry.length-1;j>=0;j--){
+            console.log(cur);
+            if(cur<newAry[j]){
+                // 当j=0;拿到的值比新数组中任何一项都小，放在数组的最前面；
+                if(j===0){
+                    newAry.unshift(cur);
+                }
+            }else{
+                newAry.splice(j+1,0,cur);
+                break;
+            }
+        }
+    }
+    // 从前往后的
+    console.log(newAry);
+
+
+</script>
+</body>
+</html>

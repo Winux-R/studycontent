@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <div>
+        <div></div>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<script>
+
+    //  1.for 循环
+    //    for (var i = 0; i < 10; i++) {
+    // 此处代码是循环体
+    //        console.log(1);// 执行十次
+    //    }
+    //    console.log(i);// 10
+    // for循环的四步曲；
+    // 1. 初始化变量
+    // 2. 条件判断;当条件不成立时，中止整个循环；
+    // 3.  执行循环体中的代码；
+    // 4.i ++
+    // 1-->2-->3-->4-->2-->3-->4-->2....
+
+    // i++ : 在自身基础+1；
+    //    var count = 0;
+    //    console.log(count ++);// 当此行运行完成之后，count+1；
+    //    console.log(count);
+
+    // ++i;
+    //    var  count =0;
+    //    console.log(++count);// 1
+    //    console.log(count);// 1
+
+    // break  continue;
+    //break : 中止整个大循环；i++ 也不再执行；
+    //    for (var i = 0; i < 10; i++) {
+    //      console.log(1);
+    //      break;//
+    //    }
+    //    console.log(i);// 0;
+
+    //continue: 结束本轮循环；
+    //    for (var i = 0; i < 10; i++) {
+    //
+    //        continue;
+    //        console.log(1);
+    //    }
+    //    console.log(i);
+    //    for (var i = 0; i < 10; i++) {
+    //        if(i<5){
+    //            continue;
+    //            i++;
+    //        }
+    //        if(i>8){
+    //            i+=2;
+    //            break;
+    //        }
+    //        i++;
+    //    }
+    //    console.log(i);
+
+    // 2.for  in  循环 ；
+    //    var  ary = [1,2,3,4,59];
+    //    var  total = 0;// 1  3  6  10   69
+    //    console.log(total);// undefined
+    //        for(var i=0;i<ary.length;i++){
+    //            var  total = 0;
+    //            //console.log(ary[i]);// 1  2  3  4  59
+    //            total +=ary[i]
+    //        }
+    //        console.log(total);
+
+    // 对象
+    // 在对象中，如果属性名相同，那么后面的值会把前面的覆盖掉；
+    var obj = {a: 1, b: 2, v: 100, 3: 'hello', 3: 'world'};
+    console.log(obj);
+    //2.for in: 遍历对象的；
+    // 1.不能采用对象名.属性名这种方式获取属性值；
+    // 2.如果属性名是数字，会先输出，并且按照数字的大小进行输出；
+    for (var key  in  obj) {
+        //console.log(key)// 属性名；字符串；
+        console.log(obj[key]);// 属性值；
+    }
+    // while : 循环； 不知道循环多少次，用while；
+    var a = 0;
+    while (a) {
+        // 循环体；
+        a++;
+        console.log(a);// 1  2  3  4   5  6;
+    };
+
+</script>
+</body>
+</html>

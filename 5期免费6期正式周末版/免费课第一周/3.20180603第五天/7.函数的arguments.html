@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // arguments : 只存在函数中；函数天生自带的参数集合；
+    // 任意数求和；
+    function sum(a,b,c) {
+        //console.log(arguments);
+        // console.log(typeof arguments);// "object"  它不是一个数组；类数组；
+//        console.log(arguments[1]);
+//        console.log(arguments.length);
+        var total = null;// 1  30  38
+        for (var i = 0; i < arguments.length; i++) {
+            //console.log(arguments[i]);
+            // 在加之前，先判断当前值转number之后是不是有效数字；如果不是，就不需要进行相加；
+            var cur = Number(arguments[i]);
+//            if(isNaN(cur)===false){
+//                total +=cur;
+//            }
+            if (!isNaN(cur)) {
+                total += cur;
+            }
+        }
+        console.log(total);
+
+    }
+    sum(1, 29, 8, "19", 88, "66", "101", "px", "12px", undefined)
+
+    function s() {
+        var total =0;
+        for(var i=0;i<arguments.length;i++){
+            var cur = Number(arguments[i]);
+            if(!isNaN(cur)){
+                total +=cur;
+            }
+        }
+    }
+    s(8, "19", 88, "66", "101", "px", "12px");
+    s(8, "24", 88, "66", "101", "px", "12px");
+    console.log(total);
+
+
+</script>
+</body>
+</html>

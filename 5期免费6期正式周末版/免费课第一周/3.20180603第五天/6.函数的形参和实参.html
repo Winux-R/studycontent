@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 求两个数的和；
+    // 形参： 函数的入口；可以把函数体外面的值传到函数里面；
+    function sum(a, b, c) {// 定义的括号中就是形参
+        // 形参在函数体中的值跟实参有关；
+        // 如果形参没有被实参赋值，那么默认存储的是undefined；
+        // undefined和任何数字运算都得NaN；
+//        console.log(a);// 10
+//        console.log(b);// 100
+        console.log(a + b+c);// 110
+        //console.log(c);// undefined
+    }
+    // 20  200
+    sum(10, 101,100,1002,20);// 函数执行括号中的内容就是实参；
+    sum(20, 200);
+    sum(20, 300);
+
+
+</script>
+</body>
+</html>

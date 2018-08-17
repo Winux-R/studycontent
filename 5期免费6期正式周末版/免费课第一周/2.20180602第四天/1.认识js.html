@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .bg{
+            width:100px;
+            height:100px;
+            /*background: red;*/
+            border:10px solid yellow;
+        }
+    </style>
+</head>
+<body>
+<div class="bg1" id="bg"></div>
+<div></div>
+<script>
+    // html  css : 标记语言； display:block;
+    //元素： 和HTML中提到的标签；
+
+    // javascript : 高级程序设计3版；编程语言；【java,php,.net,c,c++,C#...】[面向对象思想]
+
+    // if  else
+
+    // 原生JS：
+    // document.getElementById("a");
+    // $("#a"): 基于原生jS封装好的类库；
+    // 框架库都是基于原生JS封装的；
+
+
+    // 组成：DOM  document object  model;文档对象模型；提供了一些操作页面元素的方法和属性；
+    //console.log(document.getElementById("a"));
+    // BOM ： browser object  model : 浏览器对象模型；
+    // 给咱们提供js操作浏览器的方法和属性；
+    //alert(1)
+    // ES ： ECMAScript :JS的核心规范： 变量，语法，操作语句...es6;
+//    var  a = 10;
+//    let b = 19;
+//    if(true){}
+//    function a() {
+//
+//    }
+//    for(var i=0;i<8;){}
+
+
+//    function fn(a){}
+//    fn()
+
+    // 在js中，要操作谁，就要先获取谁；
+
+   var obj = document.getElementById("bg");
+   // 在js中的元素是一个对象数据类型的；
+    console.log(obj);
+    console.dir(obj); //{style:{background:""}}
+    obj.style.background = 'red';
+
+
+</script>
+</body>
+</html>

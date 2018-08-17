@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box" class="box">
+    aaa
+    <!--dd-->
+    <!--dd-->
+    <!--dd-->
+    <div id="a"></div>
+</div>
+<script>
+    // 重复；
+    // 1.数组的方法： push unshift pop shift  slice splice    sort  reverse  join  toString  indexOf  lastIndexOf  map  forEach  concat;
+    // filter  every  includes  reduce find
+
+    // 去重  冒泡排序  插入排序  快速排序（递归）；
+    // 思路和思想
+    // 交换的思想；优化思想；
+    //
+    var a = 10;
+    var b = 12;
+    var c = null;
+    //    c = a;
+    //    a = b;
+    //    b = c;
+    // num  num1 : 存储的作用；
+    var num = a + b;
+    var num1 = a - b;
+    b= (num - num1) / 2
+    a = (num + num1) / 2;
+    console.log(a);
+    console.log(b);
+
+    var  ary = [12,88,66,56,42];
+    //[12,42,56,66,88];
+    function fn() {
+        fn();
+    };
+
+    // DOM : 1.获取元素几种的方式；
+    // 1.document.getElementById()
+    // 2.document.getElementsByClassName();iE8及以下是不兼容的；
+    // 3.document.getElementsByTagName()
+    // 4.document.getElementsByName();
+    // document.body
+    // querySelector  querySelectorAll
+
+
+    var a = document.getElementById("box");// {style:{background:""}
+    a.style.background = "red";
+    var b = document.getElementsByClassName("box")[0];
+    //[{style:{background:""}]
+//    b.style.background = 'red';
+    console.log(a);
+    console.log(b);
+//    console.log(a === b);
+
+    // DOM 的节点 ：
+    // 元素节点  文本节点  注释节点  document
+
+    // a : 元素节点； nodeName : 大写的标签名
+    //a.nodeName  // "DIV"
+
+    // 节点属性： childNodes 子节点
+    // children : 子元素节点
+    // parentNode : 父节点；
+    // previousSibling: 上一个哥哥节点
+    // previousElementSibling: 上一个哥哥元素节点
+    // nextSibling : 下一个弟弟节点
+    // nextElementSibling ： 下一个弟弟元素节点
+    // firstChild : 第一个子节点
+    // firstElementChild : 第一个子元素节点
+    // lastChild  : 最后一个子节点
+    // lastElementChild  : 最后一个子元素节点
+
+    // DOM 动态操作属性
+
+    // document.createElement()
+    var s =document.createElement("span");
+    s.innerHTML = "你好我好大家好"
+    a.appendChild(s);
+    // insertBefore
+    // removeChild
+    // replaceChild
+    // cloneNode
+    // get/set/removeAttribute;
+    var a = document.getElementById("box");
+    var c= document.getElementById("a");
+    a.removeChild(c);// 原型链；
+
+
+</script>
+</body>
+</html>

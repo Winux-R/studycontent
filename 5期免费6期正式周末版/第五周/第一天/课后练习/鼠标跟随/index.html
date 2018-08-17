@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #box{
+            width: 300px;
+            height: 300px;
+            background: #20ff28;
+            position: relative;
+            margin: auto;
+        }
+        #box1{
+            width: 50px;
+            height: 50px;
+            background: #cccccc;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+    <script>
+        let box = document.getElementById('box');
+        box.onmouseenter = function () {
+            let box1 = document.createElement('div');
+          box1.id = 'box1';
+            box.appendChild(box1);
+            box.onmousemove = function (e) {
+              if (e.clientX < box.offsetLeft) {
+                box1.style.left = 0;
+              } else if (e.clientX > box.offsetLeft + box.offsetWidth - box1.offsetWidth - 10) {
+                box1.style.left = box.offsetWidth - box1.offsetWidth + 'px';
+              } else {
+                box1.style.left = e.clientX - box.offsetLeft + 10 + 'px';
+              }
+              if (e.clientY < box.offsetTop) {
+                box1.style.top = 0;
+              } else if (box.offsetTop + box.offsetHeight - box1.offsetWidth - 10 < e.clientY) {
+                box1.style.top = box.offsetHeight - box1.offsetHeight + 'px';
+              } else {
+                box1.style.top = e.clientY - box.offsetTop + 10 + 'px';
+              }
+            }
+
+        };
+        box.onmouseleave = function () {
+          let box1 = document.getElementById('box1');
+          this.removeChild(box1);
+        }
+    </script>
+</body>
+</html>

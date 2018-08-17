@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="btn">下雨了吗？</button>
+<div id="box" abc="123">
+    <ul id="ul"></ul>
+</div>
+<script>
+    // 在Js中操作元素；创建元素
+    //1 . document.createElement() : 创建元素；
+    //  var  btn = document.getElementById("btn")
+    //  btn.onclick = function () {
+    //      var  a = document.createElement("div");
+    //      a.innerHTML = "下雨了"
+    //      console.log(a);
+    //      document.body.appendChild(a);
+    //  };
+    // 2.appendChild:向容器中的末尾新增子节点；
+    // 3.insertBefore :
+    var oBox = document.getElementById("box");
+    var ul = document.getElementById("ul");
+    var newDiv = document.createElement("div");
+    //oBox.insertBefore(newDiv,ul)
+
+    // 4.removeChild : 移除子节点 父亲节点.removeChild(子节点)
+    //oBox.removeChild(ul);
+
+    // 5.replaceChild : 替换 replaceChild(new,old)
+    // oBox.replaceChild(newDiv,ul);
+    // 6.cloneNode; 克隆节点；
+    //console.log(oBox.cloneNode(true));
+    // true : 深克隆；克隆了所有子孙节点
+    // false或者不传 : 浅克隆，只克隆当前节点
+
+    // 7.getAttribute : 获取自定义属性如果获取不到，获取行内设置自定义属性；返回值是null；
+    //setAttribute : 设置
+    //removeAttribute ： 删除；
+    // oLis[i].index = i;
+    oBox.tt = '世界杯';
+    console.log(oBox.setAttribute("yy", 12345));
+    oBox.removeAttribute("yy");
+
+    //  字符串 Math  Date 定时器  倒计时
+
+
+</script>
+</body>
+</html>

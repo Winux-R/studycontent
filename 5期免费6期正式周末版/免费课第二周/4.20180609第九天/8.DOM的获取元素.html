@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<div id="box">-->
+<!--<input type="text" name="password">-->
+<!--</div>-->
+<ul id="ul" class="tab">
+    <li class="a"></li>
+    <li class="a"></li>
+    <li class="a"></li>
+    <li></li>
+    <li></li>
+</ul>
+<ul id="a">
+    aaa
+    <li></li>
+    <li></li>
+    <li></li>
+    <input type="text">
+</ul>
+<script>
+    // DOM： document  object  model:
+    // 元素、DOM元素、DOM节点；
+
+
+    // 1. document.getElementById();  上下文必须是document；在IE8以下，会默认把name属性当成id来获取；
+    // 原型；
+    //    var  a = document.getElementById("box");
+    //    console.log(document.getElementById);
+    //    var  b = console.log(a.getElementById);
+    //    a.style.background ='red';
+    //console.log(typeof a);// 'object'
+    //console.dir(a);
+    //    var  a = document.getElementById("password");
+    //    console.log(a);
+
+    // 2. document.getElementsByTagName(): 通过标签名来获取；
+    // 上下文可以是document也可以是元素对象；
+     var oUl = document.getElementById("ul");
+     var  oLis =  document.getElementsByTagName("li");
+    console.log(oLis);
+    console.log(oLis instanceof Array);// 集合，不是数组；
+
+    //3.document.getElementsByClassName(): 通过class名称来获取，在IE8以下不兼容
+     var ul = document.getElementsByClassName("tab");//[] Cannot set property 'background' of undefined;
+    console.log(ul);
+//    ul.style.background ='red';
+    //console.log(ul.getElementsByTagName("li"));
+    //    console.log(ul);
+    //    var obj = [{getElementsByTagName:function () {}}]
+    //    obj[0].getElementsByTagName()
+
+    // 4. document.getElementsByName: 一般用于获取表单元素（input）;在IE9及以下，会把ID当成name属性来获取；
+
+    //console.log(document.getElementsByName('a'));
+
+    // 5. document.body; document.documentElement;
+    //   var winW = document.documentElement.clientWidth || document.body.clientWidth;// 浏览器可视窗口的宽度
+    //    var winH = document.documentElement.clientHeight || document.body.clientHeight;
+    //    console.log(winW, winH);
+
+    // 6.querySelector
+//     id:#  class :. 标签名；
+    var mn = document.querySelector(".a");
+    console.log(mn);
+    // 7.querySelectorAll();
+    var m = document.querySelectorAll("li");
+    console.log(m);
+//    // $("#a")
+</script>
+</body>
+</html>

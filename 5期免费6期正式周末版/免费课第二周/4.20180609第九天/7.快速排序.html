@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // 算法： 算法工程师；
+    var ary = [12,88,66,100,77,56,34,28,64];
+    // 堆栈溢出: 栈内存;
+    function quickSort(a){
+        if(a.length<=1){
+            return a;
+        }
+        var index = Math.floor(a.length/2);// 获取数组的中间项的索引；
+        var middle  = a.splice(index,1)[0];
+        // 循环数组中的每一项，把比中间项小的放在左边的数组中，把比中间项大的值放在右边的数组中；
+        var left = [];
+        var right = [];
+        for(var i=0;i<a.length;i++){
+            var  cur = a[i];// 获取当前项；
+            if(cur<middle){
+                left.push(cur);
+            }else{
+                right.push(cur);
+            }
+        }
+        // ... : 展开运算符;
+       return  quickSort(left).concat(middle,quickSort(right));
+    };
+    console.log(quickSort(ary));
+
+
+    var a = [1,2,4,9];
+    var b = [77,9]
+    var n = [...a,...b]
+    console.log(n);
+
+//    function f() {
+//        f();
+//    }
+//    f();
+
+
+</script>
+</body>
+</html>

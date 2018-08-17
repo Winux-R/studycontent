@@ -1,0 +1,6 @@
+1.为什么出现怪异盒子模型
+2.Object.prototype.toString.call(obj) === '[Object Object]'
+3.类数组转数组 [].slice.call(arguments);
+               argument.__proto__ = Array.prototype;
+               [].push(argument[i]);
+               [...argument];
