@@ -28,7 +28,7 @@
 
 
     // Promise.race: 比赛；
-    // 数组中的实例谁先执行，那么就会把谁的数据传递给then；
+    // 数组中的实例谁先执行完，那么就会把谁的数据传递给then；
     Promise.race([queryFn('aside.json'),queryFn("banner.json")]).then(function (arr) {
         console.log(arr);
     }).catch(function (a) {
