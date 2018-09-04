@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const newPromise = new Promise(function (resolve, reject) {
+        const XHR = new XMLHttpRequest();
+        XHR.open('get', './index.json', true);
+        XHR.onreadystatechange = function () {
+            if (XHR.readyState === 4 && XHR.status === 200) {
+                resolve(XHR.responseText);
+            }
+        };
+        XHR.send();
+    });
+    newPromise.then(function (data) {
+        console.log(data);
+    }).catch(function (data) {
+        console.log(data);
+    })
+</script>
+</body>
+</html>
