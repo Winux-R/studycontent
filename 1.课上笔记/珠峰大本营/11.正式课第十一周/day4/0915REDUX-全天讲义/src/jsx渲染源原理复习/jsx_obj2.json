@@ -1,0 +1,29 @@
+{
+  "type": "div",
+  "key": null,
+  "ref": null,
+  "props": {
+    "children": [
+      {
+        "key": null,
+        "ref": null,
+        "props": {
+          "AA": 12
+        },
+        "_owner": null,
+        "_store": {}
+      },
+      {
+        "key": null,
+        "ref": null,
+        "props": {
+          "BB": 13
+        },
+        "_owner": null,
+        "_store": {}
+      }
+    ]
+  },
+  "_owner": null,
+  "_store": {}
+}

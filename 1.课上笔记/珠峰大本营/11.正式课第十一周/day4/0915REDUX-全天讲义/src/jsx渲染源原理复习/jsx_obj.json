@@ -1,0 +1,98 @@
+{
+  "type": "div",
+  "key": "BB",
+  "ref": "AA",
+  "props": {
+    "children": [
+      {
+        "type": "h2",
+        "key": null,
+        "ref": null,
+        "props": {
+          "className": "title",
+          "children": "2018年第六期就业成绩"
+        },
+        "_owner": null,
+        "_store": {}
+      },
+      {
+        "type": "ol",
+        "key": null,
+        "ref": null,
+        "props": {
+          "className": "clearfix",
+          "children": [
+            {
+              "type": "li",
+              "key": null,
+              "ref": null,
+              "props": {
+                "children": [
+                  {
+                    "type": "em",
+                    "key": null,
+                    "ref": null,
+                    "props": {
+                      "style": {
+                        "color": "red"
+                      },
+                      "children": "01"
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  },
+                  {
+                    "type": "span",
+                    "key": null,
+                    "ref": null,
+                    "props": {
+                      "children": "柯金珠同学入职腾讯，斩获￥20000月薪"
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            },
+            {
+              "type": "li",
+              "key": null,
+              "ref": null,
+              "props": {
+                "children": [
+                  {
+                    "type": "em",
+                    "key": null,
+                    "ref": null,
+                    "props": {},
+                    "_owner": null,
+                    "_store": {}
+                  },
+                  {
+                    "type": "span",
+                    "key": null,
+                    "ref": null,
+                    "props": {
+                      "children": "任保森同学成功留级"
+                    },
+                    "_owner": null,
+                    "_store": {}
+                  }
+                ]
+              },
+              "_owner": null,
+              "_store": {}
+            }
+          ]
+        },
+        "_owner": null,
+        "_store": {}
+      },
+      "GOOD GOOD STUDY!"
+    ]
+  },
+  "_owner": null,
+  "_store": {}
+}

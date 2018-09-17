@@ -1,128 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6387ff8-afb1-46ac-ab74-432a5523b057" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/ECMAScript6笔记/18.acync await函数/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/jquery分解/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/jquery分解/jquery原型上的方法.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/jquery分解/jquery属性fn的init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/jquery分解/jquery添加属性的方法.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/jquery分解/jquery的fn属性上添加方法.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/jquery分解/jquery私有方法.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/.bowerrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/.jscsrc" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/.npmignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/AUTHORS.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/CONTRIBUTING.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/MIT-LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/bower.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/dist/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/dist/jquery.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/dist/jquery.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax/jsonp.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax/load.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax/parseJSON.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax/parseXML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax/script.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax/var/nonce.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax/var/rquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/ajax/xhr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/attributes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/attributes/attr.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/attributes/classes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/attributes/prop.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/attributes/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/attributes/val.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/callbacks.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/core.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/core/access.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/core/init.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/core/parseHTML.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/core/ready.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/addGetHookIf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/curCSS.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/defaultDisplay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/swap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/var/cssExpand.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/var/isHidden.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/var/rmargin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/data.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/data/accepts.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/data/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/deferred.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/deprecated.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/dimensions.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/effects.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/effects/Tween.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/effects/animatedSelector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/effects/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/event.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/event/ajax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/event/alias.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/event/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/exports/amd.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/exports/global.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/intro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/manipulation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/manipulation/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/offset.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/outro.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/queue.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/queue/delay.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/selector-sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/serialize.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/dist/sizzle.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/dist/sizzle.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/dist/sizzle.min.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/test/data/empty.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/test/data/mixed_sort.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/test/data/testinit.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/test/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/test/unit/extending.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/test/unit/selector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/sizzle/test/unit/utilities.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/traversing.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/traversing/findFilter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/class2type.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/concat.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/deletedIds.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/hasOwn.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/indexOf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/pnum.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/push.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/rnotwhite.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/slice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/strundefined.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/support.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/var/toString.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/node_modules/jquery/src/wrap.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/方法test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jquery/方法测试.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/封装promise/promise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/封装promise/封装promise2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/封装动画/一直转/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/封装动画/满天星/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/封装动画/满天星/star.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/封装方法/Array基本方法实现.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/封装方法/String基本方法封装.js" beforeDir="false" />
-    </list>
+    <list default="true" id="c6387ff8-afb1-46ac-ab74-432a5523b057" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -142,10 +21,11 @@
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.3" value="2" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -185,98 +65,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/3.vue的生命周期.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1178">
-              <caret line="62" column="14" selection-start-line="62" selection-start-column="14" selection-end-line="62" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/4.mounted.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="29" selection-start-line="32" selection-start-column="15" selection-end-line="32" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/5.template属性.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/6.组件的基础.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/7.局部注册组件.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1007">
-              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/8.组件的嵌套.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/9.组件数据传递.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="760">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/10.组件的单向数据流.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="36" column="60" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="60" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/11.props验证.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="589">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/12.子传父.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="10" column="46" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -325,7 +114,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
-    <handled-path value="$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/node_modules" />
+    <handled-path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/10.正式课第十周/day1/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
@@ -349,26 +138,27 @@
       <path value="$PROJECT_DIR$/1.课上笔记/Javascript201806/9.正式课第九周/day3/package.json" />
       <path value="$PROJECT_DIR$/1.课上笔记/Javascript201806/9.正式课第九周/day5/package.json" />
       <path value="$PROJECT_DIR$/1.课上笔记/Javascript201806/9.正式课第九周/day5/todo/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day2/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day3/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day3/vue-bo/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day3/vue-book/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day3/webpack-vue/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/10.正式课第十周/webpack-vue/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/11.正式课第十一周/day1/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/11.正式课第十一周/day2/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/4.正式课第四周/4.20180729第四天/today/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/8.正式课第八周/2.20180822第二天/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/8.正式课第八周/3.20180823第三天/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/8.正式课第八周/4.20180825第四天/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/9.正式课第九周/day1/node/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/9.正式课第九周/day1/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/9.正式课第九周/day2/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/9.正式课第九周/day3/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/9.正式课第九周/day4/node_modules/vue/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/9.正式课第九周/day5/package.json" />
-      <path value="$PROJECT_DIR$/珠峰大本营/9.正式课第九周/day5/todo/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/10.正式课第十周/day1/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/10.正式课第十周/day2/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/10.正式课第十周/day3/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/10.正式课第十周/day3/vue-bo/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/10.正式课第十周/day3/vue-book/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/10.正式课第十周/day3/webpack-vue/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/10.正式课第十周/webpack-vue/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/11.正式课第十一周/day1/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/11.正式课第十一周/day2/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/4.正式课第四周/4.20180729第四天/today/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/8.正式课第八周/2.20180822第二天/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/8.正式课第八周/3.20180823第三天/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/8.正式课第八周/4.20180825第四天/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/9.正式课第九周/day1/node/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/9.正式课第九周/day1/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/9.正式课第九周/day2/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/9.正式课第九周/day3/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/9.正式课第九周/day4/node_modules/vue/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/9.正式课第九周/day5/package.json" />
+      <path value="$PROJECT_DIR$/1.课上笔记/珠峰大本营/9.正式课第九周/day5/todo/package.json" />
+      <path value="$PROJECT_DIR$/2.源码分析/jquery/node_modules/jquery/package.json" />
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
@@ -383,6 +173,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -390,29 +181,10 @@
               <item name="studycontent" type="b2602c69:ProjectViewProjectNode" />
               <item name="studycontent" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="studycontent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studycontent" type="462c0819:PsiDirectoryNode" />
-              <item name="珠峰大本营" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="studycontent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studycontent" type="462c0819:PsiDirectoryNode" />
-              <item name="珠峰大本营" type="462c0819:PsiDirectoryNode" />
-              <item name="10.正式课第十周" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="studycontent" type="b2602c69:ProjectViewProjectNode" />
-              <item name="studycontent" type="462c0819:PsiDirectoryNode" />
-              <item name="珠峰大本营" type="462c0819:PsiDirectoryNode" />
-              <item name="10.正式课第十周" type="462c0819:PsiDirectoryNode" />
-              <item name="day1" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,14 +265,16 @@
       <workItem from="1536303436818" duration="7684000" />
       <workItem from="1536914605922" duration="6121000" />
       <workItem from="1537146926351" duration="599000" />
+      <workItem from="1537153538339" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57922000" />
+    <option name="totallyTimeSpent" value="58520000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1319" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1319" height="784" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2490242" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -785,14 +559,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/5.template属性.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
+        <state relative-caret-position="456">
           <caret line="23" column="62" selection-start-line="23" selection-start-column="62" selection-end-line="23" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/6.组件的基础.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
+        <state relative-caret-position="475">
           <caret line="24" column="31" selection-start-line="24" selection-start-column="31" selection-end-line="24" selection-end-column="31" />
         </state>
       </provider>
@@ -818,24 +592,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/10.组件的单向数据流.html">
+    <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/12.子传父.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="60" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="60" />
+        <state relative-caret-position="124">
+          <caret line="10" column="46" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/11.props验证.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
+        <state relative-caret-position="562">
           <caret line="31" column="37" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/12.子传父.html">
+    <entry file="file://$PROJECT_DIR$/珠峰大本营/10.正式课第十周/day1/10.组件的单向数据流.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="10" column="46" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="46" />
+        <state relative-caret-position="562">
+          <caret line="36" column="60" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="60" />
         </state>
       </provider>
     </entry>
